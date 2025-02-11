@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Positioning Items</title>
+    <meta charset="UTF-8" />
+    <style>
+      /*////////////////////
+        // Positioning items    
+        //////////////////////
+        
+        Reset *
+        Display: inline vs block
+        https://www.w3schools.com/cssref/pr_class_display.asp
+    
+        Box-sizing
+        https://www.w3schools.com/css/css3_box-sizing.asp
+        
+        Using percentages and max-width
+        https://www.w3schools.com/cssref/css_units.asp
+
+        Centering
+        https://www.w3schools.com/css/css_align.asp
+    
+        Float and clear
+        https://www.w3schools.com/cssref/pr_class_float.asp
+
+                
+        Absolute/Relative positioning
+        https://www.w3schools.com/cssref/pr_class_position.asp
+        
+        
+        Flexbox - https://www.w3schools.com/css/css3_flexbox.asp
+
+        */
+        
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+      }
+        
+      main {
+        background-color: rgb(150, 2, 2);
+        height: 70vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: stretch;
+        gap: 10px;
+       
+      }
+
+      #left {
+        background-color: rgb(221, 223, 147);
+        flex: 1;
+        padding: 10px;
+      }
+
+      #right {
+        background-color: rgb(204, 178, 216);
+        flex: 4;
+        display: flex;
+        flex-direction: column;
+      }
+
+      #upper {
+        background-color: blueviolet;
+        flex: 1;
+        color: aliceblue;
+        background-image: url(https://placecats.com/millie_neo/300/200%22);
+        background-repeat: no-repeat;
+        background-size:auto;
+      }
+
+      #lower {
+        background-color: blue;
+        flex: 1;
+        color: aliceblue;
+      }
+
+      footer {
+        background-color: rgb(105, 236, 219);
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .wrapper {
+        max-width: 900px;
+        margin: auto;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="wrapper">
+        <header>NAVIGAATIO</header>
+        <!-- parent -->
+        <main>
+        <!-- child items -->
+        <div class="box" id="left">
+            <h2>Recent posts</h2>
+            <div>Cat 1</div>
+            <div>Cat 2</div>
+        </div>
+        <div class="box" id="right">
+            <div id="upper">KUVA</div>
+            <div id="lower">TEKSTIÄ</div>
+        </div>
+        </main>
+        <footer>
+            <p></p>flexbox layout example</p>
+        </footer>
+    </div>
+    <!-- Float continues, clearing -->
+
+    <h1>Heading 1</h1>
+    <h1>Heading 2</h1>
+
+    <!-- Responsive images and centering -->
+  </body>
+</html>

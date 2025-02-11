@@ -18,6 +18,15 @@
   background-color: crimson;
 }
 
+#snackbar.success {
+  background-color: green;
+}
+
+#snackbar.warning {
+  background-color: purple;
+}
+
+
 /* Show the snackbar when clicking on a button (class added with JavaScript) */
 #snackbar.show {
   visibility: visible; /* Show the snackbar */

@@ -4,6 +4,7 @@ import { getItems } from './items.js';
 import { getData } from './test.js';
 import { getUsers, addUsers } from './users.js';
 import { fetchData } from './fetch.js';
+import { getEntries} from './entries.js';
 
 document.querySelector('#app').innerHTML = 'Moi tässä oman APIn harjoituksia';
 
@@ -74,3 +75,6 @@ getUserBtn.addEventListener('click', getUsers);
 
 const addUserForm = document.querySelector('.formpost');
 addUserForm.addEventListener('click', addUsers);
+
+const getEntriesBtn = document.querySelector('.get_entries');
+getEntriesBtn.addEventListener('click', getEntries);

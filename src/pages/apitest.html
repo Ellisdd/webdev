@@ -139,9 +139,91 @@
         </div>
       </div>
 
+      <h3>Flexboxilla tehdyt kortit - Runko</h3>
+<!-- kortit sisältävä flex parent -->
+<section class="card-area">
+	<!-- yksittäinen kortti -->
+	<div class="card">
+		<!-- vasen puoli jossa kuva -->
+		<div class="card-img">
+			<img src="/public/img/diary.jpg" alt="pic of diary" />
+		</div>
+
+		<!-- oikea puoli jossa päiväkirjamerkintä-->
+		<div class="card-diary">
+			<!-- tänne myös flexbox rakenne -->
+			Tänne dataa
+    </div>
+	</div>
+
+  <!-- yksittäinen kortti -->
+	<div class="card">
+		<!-- vasen puoli jossa kuva -->
+		<div class="card-img">
+			<img src="/public/img/diary.jpg" alt="pic of diary" />
+		</div>
+
+		<!-- oikea puoli jossa päiväkirjamerkintä-->
+		<div class="card-diary">
+			<!-- tänne myös flexbox rakenne -->
+			Tänne dataa
+    </div>
+	</div>
+
+  <!-- yksittäinen kortti -->
+	<div class="card">
+		<!-- vasen puoli jossa kuva -->
+		<div class="card-img">
+			<img src="/public/img/diary.jpg" alt="pic of diary" />
+		</div>
+
+		<!-- oikea puoli jossa päiväkirjamerkintä-->
+		<div class="card-diary">
+			<!-- tänne myös flexbox rakenne -->
+			Tänne dataa
+    </div>  
+	</div>
+
+  <!-- yksittäinen kortti -->
+	<div class="card">
+		<!-- vasen puoli jossa kuva -->
+		<div class="card-img">
+			<img src="/public/img/diary.jpg" alt="pic of diary" />
+		</div>
+
+		<!-- oikea puoli jossa päiväkirjamerkintä-->
+		<div class="card-diary">
+			<!-- tänne myös flexbox rakenne -->
+			Tänne dataa
+    </div>  
+	</div>
+
+  <h3>Flexboxilla tehty kortti + Fetch + Itse luodut elementit</h3>
+
+  <button class="get_entries">Hae päiväkirjamerkinnät</button>
+  <section class="card-area" id="diary"></section>
+</section>
+</main>
+
       <!-- The actual snackbar -->
       <div id="snackbar">Some text some message..</div>
-    </main>
+    <!-- The actual snackbar -->
+    <div id="snackbar">Some text some message..</div>
+
+    <dialog class="info_dialog">
+      <p>
+        <!-- tähän täytetään käyttäjän tiedot -->
+        <!-- # Get user by id -->
+        <!-- GET http://127.0.0.1:3000/api/users/1 -->
+
+
+        <div>UserID: <span>Id</span></div>
+        <div>UserName: <span>Username</span></div>
+        <div>Email: <span>Email</span></div>
+        <div>Role: <span>Role</span></div>
+      </p>
+      <button autofocus>Close</button>
+    </dialog>
 
     <script type="module" src="/src/js/main.js"></script>
   </body>
